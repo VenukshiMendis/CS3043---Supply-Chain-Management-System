@@ -15,5 +15,20 @@ The system enforces strict workload constraints to ensure that drivers do not ex
 6. Analytics and Reporting  <br>
  The system offers a comprehensive suite of reports for monitoring and informed decision-making. Reports include quarterly sales data, identification of top-selling items, sales categorized by main cities and routes, tracking of working hours for drivers and driver assistants, and detailed customer order histories.
 
+### To Run the application
+
+1. Navigate to the Project Directory
+2. Install the necessary dependencies for the project by running **npm install**
+3. To import the SQL files into your MySQL database, use the command: **source /path/to/sql-file.sql** 
+4. Database importing order
+     + Tables
+     + Data
+     + Views
+     + Events
+     + Procedures
+     + Triggers
+5. To start the application, run **npm start**
+
+
 
 
