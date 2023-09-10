@@ -1,3 +1,4 @@
+
 insert into loginuser values ('storemanager1@gmail.com', '$2a$12$xYBh03.h6MwiEVMmkyeD6OSsFwmgXAUxs.jjRqKtfAK3fHPGv2Rfe','store_manager');
 insert into loginuser values ('storemanager2@gmail.com', '$2a$12$4F5ZHrtWbPKHs7sWWHfBROHE9eNZ99qL7.A4durf9Sgibiy5peHAi','store_manager');
 insert into loginuser values ('storemanager3@gmail.com', '$2a$12$GRpvpGUcZ3hPx7CPtE6aVed1AGZIspMunV8vearmcnzzLBUGH5QFK','store_manager');
@@ -98,12 +99,12 @@ insert into route values(52,'Matara-Akuressa','00:40:00',5);
 insert into route values(102,'Galle_Aluthgama','01:30:00',6);
 insert into route values(134,'Galle_Baddegama','00:30:00',6);
 
-Insert into store_manager values(31,001,'SamanKumara','store_manager1@gmail.com','0712341542',1);
-Insert into store_manager values(32,002,'Seneth Perera','store_manager2@gmail.com','0774532152',2);
-Insert into store_manager values(33,003,'Tishan Kalupahana','store_manager3@gmail.com','0718786543',3);
-Insert into store_manager values(34,004,'Nimsath Perera','store_manager4@gmail.com','0787676561',4);
-Insert into store_manager values(35,005,'Saman Alwis','store_manager5@gmail.com','0717779096',5);
-Insert into store_manager values(36,006,'Dineth Hansaka','store_manager6@gmail.com','0779067654',6);
+Insert into store_manager values(31,'SamanKumara','storemanager1@gmail.com','0712341542',1);
+Insert into store_manager values(32,'Seneth Perera','storemanager2@gmail.com','0774532152',2);
+Insert into store_manager values(33,'Tishan Kalupahana','storemanager3@gmail.com','0718786543',3);
+Insert into store_manager values(34,'Nimsath Perera','storemanager4@gmail.com','0787676561',4);
+Insert into store_manager values(35,'Saman Alwis','storemanager5@gmail.com','0717779096',5);
+Insert into store_manager values(36,'Dineth Hansaka','storemanager6@gmail.com','0779067654',6);
 
 insert into customer values ( 1 , 'Bihan Kulathunga', 'Daya Electrical, Muruthamuraya, Anuradhapura', '0702039918', 'customer1@gmail.com','wholesaler');
 insert into customer values ( 2, 'Tharushi Rajapaksha', 'Majestic Electric Co., Old Moor Street, Gampaha', '0717746046', 'customer2@gmail.com','wholesaler');
@@ -135,6 +136,51 @@ insert into customer values (27 , 'Imesh Dulanka', 'NO.657/1, Hospital Rd, Vavun
 insert into customer values ( 28 ,'Sajini Kodithuwakku', 'Singhagiri, Kanahambikai Kulam, Kilinochchi','0716033123', 'customer28@gmail.com','end customer');
 insert into customer values (29, 'Sathmina Senarathna', 'No.22, Gunasekara Lane, Kantale', '0712233123', 'customer29@gmail.com','end customer');
 insert into customer values (30 , 'Lahiru priyadharshana', 'Lahiru Electrical, Waturana Road, Ratnapura', '0706054800', 'customer30@gmail.com','retailer');
+
+
+insert into order_info values(001,010,223,'Assigned to train','2023-01-05 10:30:55', 'NO.120,Chilaw Road,Chilaw',null,24000.00,3.5);
+insert into order_info values(002,024,134,'Assigned to truck','2023-01-05 11:10:42', 'Orchard Complex, Galle Rd, Baddegama',null,23000.00,2.5);
+insert into order_info values(003,004,52,'Assigned to train','2023-01-05 12:21:00', 'Nilambara Electronics, Rupaha, Akuressa',null,25000.00,3.5);
+insert into order_info values(004,008,52,'Assigned to truck','2023-01-05 20:13:00', 'Senith Electronics, Isadin Town, Akuressa',null,40000.00,4.5);
+insert into order_info values(005,028,240,'Delivered','2023-01-06 10:33:02', 'Singhagiri, Kanahambikai Kulam, Kilinochchi',"2020-01-15",60000.00,2.5);
+insert into order_info values(006,023,230,'Assigned to train','2023-01-06 07:13:07', 'Dangaspitiya Industrial Park, Kohilegedera, Kurunegala',null,40000.00,6.5);
+insert into order_info values(007,018,100,'Assigned to truck','2023-01-07 09:45:01', 'NO.145, Peters Place, Kalutara',null,55000.00,7.5);
+insert into order_info values(008,020,70,'Assigned to train','2023-01-07 10:23:05',  'NO.7, Kiththampahuva Rd, Tangalle',null,40000.00,6.5);
+insert into order_info values(009,012,112,'Delivered to store','2023-01-07 15:08:31', 'Sameera AUTO Electrical, Pattiwala, Gampaha',null,66000.00,3.5);  
+insert into order_info values(010,013,133,'Assigned to truck','2023-01-07 21:32:23', 'Gayan Electrical, Laksha Uyana, Anuradapura',null,50000.00,4.5);
+insert into order_info values(011,030,400,'Assigned to truck','2023-01-08 06:30:45',  'Lahiru Electrical, Waturana Road, Ratnapura',null,55000.00,2.5);
+insert into order_info values(012,021,100,'Order Placed','2023-01-08 08:56:21',  'NO.123 6/1, Castle Street, Kalutara',null,40000.00,6.5);
+insert into order_info values(013,011,230,'Assigned to truck','2023-01-09 02:30:06', 'NO.154, Kadigawa, Kurunegala',null,55000.00,7.5);
+insert into order_info values(014,024,134,'Assigned to truck','2023-01-09 06:16:00',  'Orchard Complex, Galle Rd, Baddegama',null,48000.00,4.5);
+insert into order_info values(015,022,400,'Assigned to train','2023-01-09 10:12:02',  'Orel Corporation, Prince Street, Ratnapura',null,43000.00,7.5);
+insert into order_info values(016,007,156,'Assigned to train','2023-01-09 13:23:05', 'NO.5/35, Oddamavadi Rd, Batticaloa',null,45000.00,2.5);
+insert into order_info values(017,017,223,'Delivered to store','2023-01-10 09:25:09', 'Mini Electricals, Stenly Thilakarathana Mw, Chilaw',null,40000.00,3.5);
+insert into order_info values(018,015,230,'Assigned to train','2023-01-10 11:23:06',  'NO.102, Ridigama, Kurunagala',null,58000.00,8.5);
+insert into order_info values(019,021,100,'Delivered to store','2023-01-10 17:08:41', 'NO.123 6/1, Castle Street, Kalutara',null,80000.00,7.5);
+insert into order_info values(020,019,70,'Assigned to truck','2023-01-10 18:32:25', 'Kahatapitiya Hardware, Kandaenawaththa Rd, Tangalle',null,55000.00,4.5);
+insert into order_info values(021,023,230,'Assigned to truck','2023-01-10 23:30:45', 'Dangaspitiya Industrial Park, Kohilegedera, Kurunegala',null,10000.00,5.6);
+insert into order_info values(022,007,156,'Order Placed','2023-01-11 07:56:01',  'NO.5/35, Oddamavadi Rd, Batticaloa',null,12890.00,6.7);
+insert into order_info values(023,016,133,'Delivered','2023-01-11 08:25',  'Mega Solar, Hamillawa, Anuradhapura','2023-01-18',12768.00,4.5);
+insert into order_info values(024,026,112,'Assigned to truck','2023-01-11 13:13:03', 'Power Logic Engineers (PVT)LTD, Udugampola, Gampaha',null,45351.00,6.9);
+insert into order_info values(025,003,223,'Delivered','2023-01-11 14:33:45', 'NO.178, Alwis Town, Chilaw',null,54632.00,2.3);
+insert into order_info values(026,018,100,'Assigned to train','2023-01-11 15:13:17', 'NO.145, Peters Place, Kalutara',null,33428.00,10.89);
+insert into order_info values(027,009,102,'Assigned to train','2023-01-11 15:45:08',  'City Electricals, Mawanagama, Aluthgama',null,12435.00,12.90);
+insert into order_info values(028,029,300,'Assigned to train','2023-01-11 18:23:35',  'No.22, Gunasekara Lane, Kantale',null,14000.00,4.00);
+insert into order_info values(029,027,203,'Delivered to store','2023-01-12 01:08:39',  'NO.657/1, Hospital Rd, Vavuniya',null,13890.00,2.78);
+insert into order_info values(030,013,133,'Assigned to truck','2023-01-12 10:32:43', 'Gayan Electrical, Laksha Uyana, Anuradapura',null,12560.00,10.89);
+insert into order_info values(031,002,112,'Assigned to truck','2023-01-12 12:30:41', 'Majestic Electric Co., Old Moor Street, Gampaha',null,12700.00,12.89);
+insert into order_info values(032,028,240,'Delivered to store','2023-01-12 15:56:11',  'Singhagiri, Kanahambikai Kulam, Kilinochchi',null,45600.00,6.89);
+insert into order_info values(033,001,133,'Assigned to truck','2023-01-13 03:00:07', 'Daya Electrical, Muruthamuraya, Anuradhapura',null,31000.00,3.45);
+insert into order_info values(034,022,400,'Assigned to truck','2023-01-13 08:26:00',   'Orel Corporation, Prince Street, Ratnapura',null,23900.00,9.10);
+insert into order_info values(035,013,133,'Assigned to train','2023-01-13 12:08:12',  'Gayan Electrical, Laksha Uyana, Anuradapura',null,12030.00,3.45);
+insert into order_info values(036,007,156,'Assigned to train','2023-01-14 09:35:34', 'NO.5/35, Oddamavadi Rd, Batticaloa',null,12780.00,4.56);
+insert into order_info values(037,011,230,'Assigned to train','2023-01-14 09:43:06',  'NO.154, Kadigawa, Kurunegala',null,12700.00,2.12);
+insert into order_info values(038,011,230,'Delivered','2023-01-14 09:43:06',  'NO.154, Kadigawa, Kurunegala','2023-01-20',12356.00,9.87);
+insert into order_info values(039,021,100,'Assigned to train','2023-01-14 16:45:23', 'NO.123 6/1, Castle Street, Kalutara',null,20200.00,5.45);
+insert into order_info values(040,018,100,'Assigned to truck','2023-01-14 23:32:45',  'NO.145, Peters Place, Kalutara',null,45000.00,5.67);
+insert into order_info values(041,023,230,'Assigned to truck','2023-01-14 23:50:05', 'Dangaspitiya Industrial Park, Kohilegedera, Kurunegala',null,12900.00,2.34);
+insert into order_info values(042,025,223,'Assigned to truck','2023-01-15 07:16:10',  'NO.83, Negombo Rd, Chilaw',null,16800.00,2.46);
+insert into order_info values(043,008,52,'Assigned to train','2023-01-15 08:25:02',  'Senith Electronics, Isadin Town, Akuressa',null,12780.00,9.06);
 
 
 insert into order_details values (1, 10, 10);
@@ -198,7 +244,7 @@ insert into order_details values (16, 10, 18);
 insert into order_details values (19, 5, 22);
 -- DATA RELATED TO DRIVERS, DRIVER ASSISTANTS, TURNS
 
-INSERT INTO Driver (employee_ID,user_ID,name,email,phone,store_ID,license_number)
+INSERT INTO Driver (employee_ID,name,email,phone,store_ID,license_number)
 VALUES
 (1, 'driver1', 'driver1@gmail.com', '0702234243',1, 'C2324256'),
 (2, 'driver2', 'driver2@gmail.com', '0772238244',1, 'C2224257'),
@@ -226,43 +272,6 @@ VALUES
 (22, 'd_assistant10', 'driverAssistant10@gmail.com', '0702234552',5),
 (23, 'd_assistant11', 'driverAssistant11@gmail.com', '0772234553',6);
 
-INSERT INTO driver_roster (employee_ID, total_Worked_hours_for_the_week, assigned_working_hours_for_the_week)
-VALUES
-(1, 0, 0),
-(2, 0, 0),
-(3, 0, 0),
-(4, 0, 0),
-(5, 0, 0),
-(6, 0, 0),
-(7, 0, 0),
-(8, 0, 0),
-(9, 0, 0),
-(10, 0, 0),
-(11, 0, 0);
-
-INSERT INTO driver_assistant_roster (employee_ID, total_Worked_hours_for_the_week, assigned_working_hours_for_the_week, consecutive_turn )
-VALUES
-(13, 0, 0, 0),
-(14, 0, 0, 0),
-(15, 0, 0, 0),
-(16, 0, 0, 0),
-(17, 0, 0, 0),
-(18, 0, 0, 0),
-(19, 0, 0, 0),
-(21, 0, 0, 0),
-(20, 0, 0, 0),
-(22, 0, 0, 0),
-(23, 0, 0, 0);
-
-
-insert into turn values (1,1,13,"AAA0001",100,"2023-01-15 10:00:00",null,null,null);
-insert into turn values (2,2,14,"AAA0002",112,"2023-01-13 10:00:00",null,null,null);
-insert into turn values (3,5,17,"AAA0007",133,"2023-01-14 10:00:00",null,null,null);
-insert into turn values (4,7,19,"AAA0010",230,"2023-01-15 10:00:00",null,null,null);
-insert into turn values (5,8,20,"AAA0011",223,"2023-01-16 10:00:00",null,null,null);
-insert into turn values (6,9,21,"AAA0013",52,"2023-01-06 10:00:00",null,null,null);
-insert into turn values (7,10,22,"AAA0014",70,"2023-01-12 10:00:00",null,null,null);
-insert into turn values (8,11,23,"AAA0016",134,"2023-01-10 10:00:00",null,null,null);
 
 insert into truck values ("AAA0001", 1 , 1, 40);
 insert into truck values ("AAA0002", 1 , 1, 30);
@@ -283,6 +292,47 @@ insert into truck values ("AAA0016", 6 , 1, 40);
 insert into truck values ("AAA0017", 6 , 1, 30);
 insert into truck values ("AAA0018", 6 , 1, 20);
 
+
+INSERT INTO driver_roster (employee_ID, total_Worked_hours_for_the_week, assigned_working_hours_for_the_week)
+VALUES
+(1, 0, 0),
+(2, 0, 0),
+(3, 0, 0),
+(4, 0, 0),
+(5, 0, 0),
+(6, 0, 0),
+(7, 0, 0),
+(8, 0, 0),
+(9, 0, 0),
+(10, 0, 0),
+(11, 0, 0);
+
+
+INSERT INTO driver_assistant_roster (employee_ID, total_Worked_hours_for_the_week, assigned_working_hours_for_the_week, consecutive_turn )
+VALUES
+(13, 0, 0, 0),
+(14, 0, 0, 0),
+(15, 0, 0, 0),
+(16, 0, 0, 0),
+(17, 0, 0, 0),
+(18, 0, 0, 0),
+(19, 0, 0, 0),
+(21, 0, 0, 0),
+(20, 0, 0, 0),
+(22, 0, 0, 0),
+(23, 0, 0, 0);
+
+
+
+insert into turn values (1,1,13,"AAA0001",100,"2023-01-15 10:00:00",null,null,null);
+insert into turn values (2,2,14,"AAA0002",112,"2023-01-13 10:00:00",null,null,null);
+insert into turn values (3,5,17,"AAA0007",133,"2023-01-14 10:00:00",null,null,null);
+insert into turn values (4,7,19,"AAA0010",230,"2023-01-15 10:00:00",null,null,null);
+insert into turn values (5,8,20,"AAA0011",223,"2023-01-16 10:00:00",null,null,null);
+insert into turn values (6,9,21,"AAA0013",52,"2023-01-06 10:00:00",null,null,null);
+insert into turn values (7,10,22,"AAA0014",70,"2023-01-12 10:00:00",null,null,null);
+insert into turn values (8,11,23,"AAA0016",134,"2023-01-10 10:00:00",null,null,null);
+
 insert into truck_assignment values (7,1);
 insert into truck_assignment values (24,2);
 insert into truck_assignment values (31,2);
@@ -299,49 +349,6 @@ insert into truck_assignment values (20,7);
 insert into truck_assignment values (2,8);
 insert into truck_assignment values (14,8);
 
-insert into order_info values(001,010,223,'Assigned to train','2023-01-05 10:30:55', 'NO.120,Chilaw Road,Chilaw',null,24000.00,3.5);
-insert into order_info values(002,024,134,'Assigned to truck','2023-01-05 11:10:42', 'Orchard Complex, Galle Rd, Baddegama',null,23000.00,2.5);
-insert into order_info values(003,004,52,'Assigned to train','2023-01-05 12:21:00', 'Nilambara Electronics, Rupaha, Akuressa',null,25000.00,3.5);
-insert into order_info values(004,008,52,'Assigned to truck','2023-01-05 20:13:00', 'Senith Electronics, Isadin Town, Akuressa',null,40000.00,4.5);
-insert into order_info values(005,028,240,'Delivered','2023-01-06 10:33:02', 'Singhagiri, Kanahambikai Kulam, Kilinochchi',"2020-01-15",60000.00,2.5);
-insert into order_info values(006,023,230,'Assigned to train','2023-01-06 07:13:07', 'Dangaspitiya Industrial Park, Kohilegedera, Kurunegala',null,40000.00,6.5);
-insert into order_info values(007,018,100,'Assigned to truck','2023-01-07 09:45:01', 'NO.145, Peters Place, Kalutara',null,55000.00,7.5);
-insert into order_info values(008,020,70,'Assigned to train','2023-01-07 10:23:05',  'NO.7, Kiththampahuva Rd, Tangalle',null,40000.00,6.5);
-insert into order_info values(009,012,112,'Delivered to store','2023-01-07 15:08:31', 'Sameera AUTO Electrical, Pattiwala, Gampaha',null,66000.00,3.5);  
-insert into order_info values(010,013,133,'Assigned to truck','2023-01-07 21:32:23', 'Gayan Electrical, Laksha Uyana, Anuradapura',null,50000.00,4.5);
-insert into order_info values(011,030,400,'Assigned to truck','2023-01-08 06:30:45',  'Lahiru Electrical, Waturana Road, Ratnapura',null,55000.00,2.5);
-insert into order_info values(012,021,100,'Order Placed','2023-01-08 08:56:21',  'NO.123 6/1, Castle Street, Kalutara',null,40000.00,6.5);
-insert into order_info values(013,011,230,'Assigned to truck','2023-01-09 02:30:06', 'NO.154, Kadigawa, Kurunegala',null,55000.00,7.5);
-insert into order_info values(014,024,134,'Assigned to truck','2023-01-09 06:16:00',  'Orchard Complex, Galle Rd, Baddegama',null,48000.00,4.5);
-insert into order_info values(015,022,400,'Assigned to train','2023-01-09 10:12:02',  'Orel Corporation, Prince Street, Ratnapura',null,43000.00,7.5);
-insert into order_info values(016,007,156,'Assigned to train','2023-01-09 13:23:05', 'NO.5/35, Oddamavadi Rd, Batticaloa',null,45000.00,2.5);
-insert into order_info values(017,017,223,'Delivered to store','2023-01-10 09:25:09', 'Mini Electricals, Stenly Thilakarathana Mw, Chilaw',null,40000.00,3.5);
-insert into order_info values(018,015,230,'Assigned to train','2023-01-10 11:23:06',  'NO.102, Ridigama, Kurunagala',null,58000.00,8.5);
-insert into order_info values(019,021,100,'Delivered to store','2023-01-10 17:08:41', 'NO.123 6/1, Castle Street, Kalutara',null,80000.00,7.5);
-insert into order_info values(020,019,70,'Assigned to truck','2023-01-10 18:32:25', 'Kahatapitiya Hardware, Kandaenawaththa Rd, Tangalle',null,55000.00,4.5);
-insert into order_info values(021,023,230,'Assigned to truck','2023-01-10 23:30:45', 'Dangaspitiya Industrial Park, Kohilegedera, Kurunegala',null,10000.00,5.6);
-insert into order_info values(022,007,156,'Order Placed','2023-01-11 07:56:01',  'NO.5/35, Oddamavadi Rd, Batticaloa',null,12890.00,6.7);
-insert into order_info values(023,016,133,'Delivered','2023-01-11 08:25',  'Mega Solar, Hamillawa, Anuradhapura','2023-01-18',12768.00,4.5);
-insert into order_info values(024,026,112,'Assigned to truck','2023-01-11 13:13:03', 'Power Logic Engineers (PVT)LTD, Udugampola, Gampaha',null,45351.00,6.9);
-insert into order_info values(025,003,223,'Delivered','2023-01-11 14:33:45', 'NO.178, Alwis Town, Chilaw',null,54632.00,2.3);
-insert into order_info values(026,018,100,'Assigned to train','2023-01-11 15:13:17', 'NO.145, Peters Place, Kalutara',null,33428.00,10.89);
-insert into order_info values(027,009,102,'Assigned to train','2023-01-11 15:45:08',  'City Electricals, Mawanagama, Aluthgama',null,12435.00,12.90);
-insert into order_info values(028,029,300,'Assigned to train','2023-01-11 18:23:35',  'No.22, Gunasekara Lane, Kantale',null,14000.00,4.00);
-insert into order_info values(029,027,203,'Delivered to store','2023-01-12 01:08:39',  'NO.657/1, Hospital Rd, Vavuniya',null,13890.00,2.78);
-insert into order_info values(030,013,133,'Assigned to truck','2023-01-12 10:32:43', 'Gayan Electrical, Laksha Uyana, Anuradapura',null,12560.00,10.89);
-insert into order_info values(031,002,112,'Assigned to truck','2023-01-12 12:30:41', 'Majestic Electric Co., Old Moor Street, Gampaha',null,12700.00,12.89);
-insert into order_info values(032,028,240,'Delivered to store','2023-01-12 15:56:11',  'Singhagiri, Kanahambikai Kulam, Kilinochchi',null,45600.00,6.89);
-insert into order_info values(033,001,133,'Assigned to truck','2023-01-13 03:00:07', 'Daya Electrical, Muruthamuraya, Anuradhapura',null,31000.00,3.45);
-insert into order_info values(034,022,400,'Assigned to truck','2023-01-13 08:26:00',   'Orel Corporation, Prince Street, Ratnapura',null,23900.00,9.10);
-insert into order_info values(035,013,133,'Assigned to train','2023-01-13 12:08:12',  'Gayan Electrical, Laksha Uyana, Anuradapura',null,12030.00,3.45);
-insert into order_info values(036,007,156,'Assigned to train','2023-01-14 09:35:34', 'NO.5/35, Oddamavadi Rd, Batticaloa',null,12780.00,4.56);
-insert into order_info values(037,011,230,'Assigned to train','2023-01-14 09:43:06',  'NO.154, Kadigawa, Kurunegala',null,12700.00,2.12);
-insert into order_info values(038,011,230,'Delivered','2023-01-14 09:43:06',  'NO.154, Kadigawa, Kurunegala','2023-01-20',12356.00,9.87);
-insert into order_info values(039,021,100,'Assigned to train','2023-01-14 16:45:23', 'NO.123 6/1, Castle Street, Kalutara',null,20200.00,5.45);
-insert into order_info values(040,018,100,'Assigned to truck','2023-01-14 23:32:45',  'NO.145, Peters Place, Kalutara',null,45000.00,5.67);
-insert into order_info values(041,023,230,'Assigned to truck','2023-01-14 23:50:05', 'Dangaspitiya Industrial Park, Kohilegedera, Kurunegala',null,12900.00,2.34);
-insert into order_info values(042,025,223,'Assigned to truck','2023-01-15 07:16:10',  'NO.83, Negombo Rd, Chilaw',null,16800.00,2.46);
-insert into order_info values(043,008,52,'Assigned to train','2023-01-15 08:25:02',  'Senith Electronics, Isadin Town, Akuressa',null,12780.00,9.06);
 
 
 insert into train values ('Sagarika', "08:00:00", 'Galle',500);
@@ -352,60 +359,60 @@ insert into train values ('Rajarata Manike', "10:00:00", 'Trincomalee', 600);
 insert into train values ('Ruhunu Kumari', "10:50:00", 'Matara', 500);
 
 
-insert into train_trip values (001 ,'Sagarika', '2023-01-01');
-insert into train_trip values (002 ,'Rajarata Manike', '2023-01-02' );
-insert into train_trip values (003 ,'Udarata Manike', '2023-01-02');
-insert into train_trip values (004 ,'Ruhunu Kumari', '2023-01-03');
-insert into train_trip values (005 ,'Intercity', '2023-01-03');
-insert into train_trip values (006 ,'Sagarika', '2023-01-04');
-insert into train_trip values (007 ,'Podi Manike','2023-01-04');
-insert into train_trip values (008 ,'Rajarata Manike', '2023-01-05');
-insert into train_trip values (009 ,'Sagarika', '2023-01-05');
-insert into train_trip values (010 ,'Podi Manike', '2023-01-06');
-insert into train_trip values (011 ,'Ruhunu Kumari', '2023-01-06');
-insert into train_trip values (012 ,'Udarata Manike', '2023-01-07');
-insert into train_trip values (013 ,'Sagarika', '2023-01-07');
-insert into train_trip values (014 ,'Rajarata Manike', '2023-01-08');
-insert into train_trip values (015 ,'Intercity', '2023-01-08');
-insert into train_trip values (016 ,'Ruhunu Kumari', '2023-01-09');
-insert into train_trip values (017 ,'Podi Manike', '2023-01-09');
-insert into train_trip values (018 ,'Intercity', '2023-01-10');
-insert into train_trip values (019 ,'Sagarika', '2023-01-10');
-insert into train_trip values (020 ,'Rajarata Manike', '2023-01-11');
-insert into train_trip values (021 ,'Ruhunu Kumari', '2023-01-11');
-insert into train_trip values (022 ,'Udarata Manike', '2023-01-12');
-insert into train_trip values (023 ,'Rajarata Manike','2023-01-12');
-insert into train_trip values (024 ,'Podi Manike', '2023-01-13');
-insert into train_trip values (025 ,'Sagarika', '2023-01-13');
-insert into train_trip values (026 ,'Ruhunu Kumari', '2023-01-14');
-insert into train_trip values (027 ,'Intercity', '2023-01-14');
-insert into train_trip values (028 ,'Sagarika', '2023-01-15');
-insert into train_trip values (029 ,'Podi Manike', '2023-01-15');
-insert into train_trip values (030 ,'Ruhunu Kumari', '2023-01-16');
-insert into train_trip values (031 ,'Rajarata Manike', '2023-01-16');
-insert into train_trip values (032 ,'Sagarika', '2023-01-17');
-insert into train_trip values (033 ,'Intercity', '2023-01-17');
-insert into train_trip values (035 ,'Sagarika', '2023-01-18');
-insert into train_trip values (036 ,'Rajarata Manike', '2023-01-19');
-insert into train_trip values (037 ,'Udarata Manike', '2023-01-19');
-insert into train_trip values (038 ,'Ruhunu Kumari', '2023-01-20');
-insert into train_trip values (039 ,'Podi Manike', '2023-01-20');
-insert into train_trip values (040 ,'Intercity', '2023-01-21');
-insert into train_trip values (041 ,'Sagarika', '2023-01-21');
-insert into train_trip values (042 ,'Ruhunu Kumari', '2023-01-22');
-insert into train_trip values (043 ,'Rajarata Manike', '2023-01-23');
-insert into train_trip values (044 ,'Podi Manike', '2023-01-23');
-insert into train_trip values (045 ,'Podi Manike', '2023-01-24');
-insert into train_trip values (046 ,'Sagarika', '2023-01-24');
-insert into train_trip values (047 ,'Intercity', '2023-01-25');
-insert into train_trip values (048 ,'Rajarata Manike', '2023-01-25');
-insert into train_trip values (049 ,'Ruhunu Kumari', '2023-01-26');
-insert into train_trip values (050 ,'Sagarika', '2023-01-27');
-insert into train_trip values (051 ,'Rajarata Manike', '2023-01-28');
-insert into train_trip values (052 ,'Podi Manike', '2023-01-28');
-insert into train_trip values (053 ,'Sagarika', '2023-01-29');
-insert into train_trip values (054 ,'Ruhunu Kumari', '2023-01-29');
-insert into train_trip values (055 ,'Rajarata Manike', '2023-01-30');
+insert into train_trip values (001 ,'Sagarika', '2023-01-01',500);
+insert into train_trip values (002 ,'Rajarata Manike', '2023-01-02' , 600);
+insert into train_trip values (003 ,'Udarata Manike', '2023-01-02',300);
+insert into train_trip values (004 ,'Ruhunu Kumari', '2023-01-03',500);
+insert into train_trip values (005 ,'Intercity', '2023-01-03',400);
+insert into train_trip values (006 ,'Sagarika', '2023-01-04',500);
+insert into train_trip values (007 ,'Podi Manike','2023-01-04',200);
+insert into train_trip values (008 ,'Rajarata Manike', '2023-01-05', 600);
+insert into train_trip values (009 ,'Sagarika', '2023-01-05',500);
+insert into train_trip values (010 ,'Podi Manike', '2023-01-06',200);
+insert into train_trip values (011 ,'Ruhunu Kumari', '2023-01-06',500);
+insert into train_trip values (012 ,'Udarata Manike', '2023-01-07',300);
+insert into train_trip values (013 ,'Sagarika', '2023-01-07',500);
+insert into train_trip values (014 ,'Rajarata Manike', '2023-01-08',600);
+insert into train_trip values (015 ,'Intercity', '2023-01-08',400);
+insert into train_trip values (016 ,'Ruhunu Kumari', '2023-01-09',500);
+insert into train_trip values (017 ,'Podi Manike', '2023-01-09',200);
+insert into train_trip values (018 ,'Intercity', '2023-01-10',400);
+insert into train_trip values (019 ,'Sagarika', '2023-01-10',500);
+insert into train_trip values (020 ,'Rajarata Manike', '2023-01-11', 600);
+insert into train_trip values (021 ,'Ruhunu Kumari', '2023-01-11',500);
+insert into train_trip values (022 ,'Udarata Manike', '2023-01-12',300);
+insert into train_trip values (023 ,'Rajarata Manike','2023-01-12', 600);
+insert into train_trip values (024 ,'Podi Manike', '2023-01-13',200);
+insert into train_trip values (025 ,'Sagarika', '2023-01-13',500);
+insert into train_trip values (026 ,'Ruhunu Kumari', '2023-01-14',500);
+insert into train_trip values (027 ,'Intercity', '2023-01-14',400);
+insert into train_trip values (028 ,'Sagarika', '2023-01-15',500);
+insert into train_trip values (029 ,'Podi Manike', '2023-01-15',200);
+insert into train_trip values (030 ,'Ruhunu Kumari', '2023-01-16',500);
+insert into train_trip values (031 ,'Rajarata Manike', '2023-01-16', 600);
+insert into train_trip values (032 ,'Sagarika', '2023-01-17',500);
+insert into train_trip values (033 ,'Intercity', '2023-01-17',400);
+insert into train_trip values (035 ,'Sagarika', '2023-01-18',500);
+insert into train_trip values (036 ,'Rajarata Manike', '2023-01-19',600);
+insert into train_trip values (037 ,'Udarata Manike', '2023-01-19',300);
+insert into train_trip values (038 ,'Ruhunu Kumari', '2023-01-20',500);
+insert into train_trip values (039 ,'Podi Manike', '2023-01-20',200);
+insert into train_trip values (040 ,'Intercity', '2023-01-21',400);
+insert into train_trip values (041 ,'Sagarika', '2023-01-21',500);
+insert into train_trip values (042 ,'Ruhunu Kumari', '2023-01-22',500);
+insert into train_trip values (043 ,'Rajarata Manike', '2023-01-23', 600);
+insert into train_trip values (044 ,'Podi Manike', '2023-01-23',200);
+insert into train_trip values (045 ,'Podi Manike', '2023-01-24',200);
+insert into train_trip values (046 ,'Sagarika', '2023-01-24',500);
+insert into train_trip values (047 ,'Intercity', '2023-01-25',400);
+insert into train_trip values (048 ,'Rajarata Manike', '2023-01-25', 600);
+insert into train_trip values (049 ,'Ruhunu Kumari', '2023-01-26',500);
+insert into train_trip values (050 ,'Sagarika', '2023-01-27',500);
+insert into train_trip values (051 ,'Rajarata Manike', '2023-01-28', 600);
+insert into train_trip values (052 ,'Podi Manike', '2023-01-28',200);
+insert into train_trip values (053 ,'Sagarika', '2023-01-29',500);
+insert into train_trip values (054 ,'Ruhunu Kumari', '2023-01-29',500);
+insert into train_trip values (055 ,'Rajarata Manike', '2023-01-30', 600);
 
 insert into train_assignment values (001,012);
 insert into train_assignment values (003,011);
@@ -424,4 +431,4 @@ insert into train_assignment values (039,033);
 insert into train_assignment values (043,030);
 
 
--- REMAINING DATA TO BE FILLED
+
