@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/create.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Create Turn</div>
+    <div class="content">
+        <div class="user-details">
+          <form action="/create" method="post">
+            <div class="input-box">
+              <span class="details">Route ID</span>
+              <input type="text" name='route_ID' placeholder="Enter Route ID" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Vehicle No</span>
+              <input type="text" name='vehicle_no' placeholder="Enter Vehicle No" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Turn Start Time</span>
+              <input type="text" name='turn_start_time' placeholder="YYYY-MM-DD HH:MM:SS" required>
+            </div>           
+            <div class="button">
+              <input type="submit" value="CREATE">
+            </div>
+          </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/assign.css">
+        <title>
+            
+        </title>
+    </head>
+    <body>
+        
+    
+
+        <div class="container">
+            <header>
+                <div class="content-wrapper">
+                    
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/storemanagermain">Storemanager</a>
+                    </nav>
+                    
+                </div>
+            </header>
+    
+            
+            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            
+            <% if(action == 'add') { %>
+
+            <% } else { %>
+                
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        truck_turn_ID:<input type="'text",name="truck", id="truck">
+                        <table class="table table-bordered" id="turn">
+                            <tr>
+                                <th>truck_turn_ID</th>
+                                <th>driver_ID</th>
+                                <th>driver_assistant_ID</th>
+                                <th>vehicle_no</th>
+                                <th>Date</th>
+                                <th>route_ID</th>
+                                <th>turn_start_time</th>
+                                <th>turn_end_time</th>
+                                <th>Action</th>
+                            </tr>
+                            <%
+                            if(sampleData.length > 0)
+                            {
+                                sampleData.forEach(function(data){
+                            %>
+                            <tr>
+                                <td><%= data.truck_turn_ID %></td>
+                                <td><%= data.driver_ID %></td>
+                                <td><%= data.driver_assistant_ID %></td>
+                                <td><%= data.vehicle_no %></td>
+                                <td><%= data.date %></td>
+                                <td><%= data.route_ID %></td>
+                                <td><%= data.turn_start_time %></td>
+                                <td><%= data.turn_end_time %></td>
+                                <td>
+                                    <form action="/truckAssign">
+                                        <input type="text" name="TruckTurnID" value='<%= data.truck_turn_ID %>' hidden>
+                                        <input type="submit" class="btn" value= "OK">
+                                    </form>                                 
+                                </td>
+                            </tr>
+                            <%
+                                });
+                            }
+                            else
+                            {
+                            %>
+                            <tr>
+                                <td colspan="5">No Data Found</td>
+                            </tr>
+                            <%
+                            }
+                            %>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <% } %>
+
+        </div> 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

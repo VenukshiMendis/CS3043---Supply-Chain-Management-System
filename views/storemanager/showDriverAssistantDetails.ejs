@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/assign.css">
+        <title>
+            
+        </title>
+    </head>
+    <body>
+        
+    
+
+        <div class="container">
+            <header>
+                <div class="content-wrapper">
+                    
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/storemanagermain">Storemanager</a>
+                    </nav>
+                    
+                </div>
+            </header>
+    
+            
+            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            
+            <% if(action == 'add') { %>
+
+            <% } else { %>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Employee ID</th>
+                                <th>Name</th>
+                                <th>E - mail</th>
+                                <th>Phone</th>
+                                <th>Store_ID</th>
+                                <th>Total work hours</th>
+                                <th>Assigned work hours</th>
+                            </tr>
+                            <%
+                            if(sampleData.length > 0)
+                            {
+                                sampleData.forEach(function(data){
+                            %>
+                            <tr>
+                                <td><%= data.employee_ID %></td>
+                                <td><%= data.name %></td>
+                                <td><%= data.email %></td>
+                                <td><%= data.phone %></td>
+                                <td><%= data.store_ID %></td>
+                                <td><%= data.total_worked_hours_for_the_week %></td>
+                                <td><%= data.assigned_working_hours_for_the_week %></td>
+                            </tr>
+                            <%
+                                });
+                            }
+                            else
+                            {
+                            %>
+                            <tr>
+                                <td colspan="5">No Data Found</td>
+                            </tr>
+                            <%
+                            }
+                            %>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <% } %>
+
+        </div> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
