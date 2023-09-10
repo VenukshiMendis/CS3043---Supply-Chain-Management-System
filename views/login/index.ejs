@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login system with nodejs and mysql database</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <section class="box">
+        <div class="design">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="form">
+            <h2>User Login</h2>
+            <form action="/" method="POST">
+                <!-- name is used as the variable name-->
+                <input type="email" name="username" class="input-field" placeholder="Username" required="required"/>
+                <input type="password" name="password" class="input-field" placeholder="Password" required="required" />
+                <input type="submit" class="btn" value="LOGIN">
+            </form>
+            <div class="text-center text-lg-start mt-4 pt-2">
+                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? </p>
+                <!--go to register page when register btn is clicked-->
+                <a href="/register">Register</a>
+                    <!-- <input type="submit" class="btn" value="Register"> -->
+              </div>
+        </div>
+    </section>
+</body>
+</html>

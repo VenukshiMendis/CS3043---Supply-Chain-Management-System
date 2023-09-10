@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/confirmOrder.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="title"><%= title %></div>
+    <div class="content">
+        <div class="user-details">
+          <form action="/confirmOrder" method="POST">
+        
+            <div class="input-box">
+              <span class="details"><b>Delivery Address</b></span>
+              <input type="text" name="DeliveryAddress" placeholder="Enter your delivery address" required>
+            </div>
+           
+            <div class="input-radio">
+                <span class="details"><b>Route</b> </span>
+            </div>
+            <%
+            if(sampleData.length > 0)
+            {
+                sampleData.forEach(function(data){
+            %>
+            
+                
+                
+                  <div class="form-check">
+                    <input type="radio" id=<%= data.route_name %> name="RouteName" value=<%= data.route_name %> required>
+                    <label for="wholesalerl"><%= data.route_name %></label><br>
+                    
+                  </div>
+                
+                
+                
+                
+                
+            <%
+                });
+                
+            }
+            else
+            {
+            %>
+            
+            <%
+            }
+            %>
+
+      </div>
+      <br>
+       <h4 align="center">Confirm your order at least 7 days prior to the delivery date </h4></align>
+       <div class="form-check">
+        <input type="radio" id="Confirm Now" name="Confirmedornot" value="Confirmed" required>
+        <label for="Confirm Now" >Confirm Now</label><br>
+        <input type="radio" id="Confirm Later" name="Confirmedornot" value="Not confirmed" required>
+        <label for="Confirm Later">Confirm Later</label><br>
+        
+      </div>
+            
+      <div class="wrapper">
+        
+        <input type="submit"  id="Proceed" class="btn" value="Proceed">
+       
+       
+          </div>
+    </form>
+        
+      
+    </div>
+  </div>
+
+</body>
+</html>
