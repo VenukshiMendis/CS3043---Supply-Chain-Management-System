@@ -164,7 +164,6 @@ create table turn
 	 actual_start_time 			datetime,
 	 actual_end_time 			datetime,
 	 primary key (truck_turn_ID),
-	 primary key (truck_turn_ID),
 	 foreign key (driver_ID) references driver(employee_ID) 
 		on delete cascade,
 	 foreign key (driver_assistant_ID) references driver_assistant(employee_ID) 
