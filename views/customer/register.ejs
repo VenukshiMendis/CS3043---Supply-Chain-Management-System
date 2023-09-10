@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/regstyle.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="/register/signup" method="POST">
+        <div class="user-details">
+          
+            <div class="input-box">
+              <span class="details">Name</span>
+              <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Address</span>
+              <input type="text" name="address" placeholder="Enter your address" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="email" name ='email' placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" name='phonenumber' placeholder="Enter your moblie number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="text" name='password' placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input type="text" name='confirmpassword' placeholder="Confirm your password" required>
+            </div>
+            
+            
+
+      </div>
+      <div class="input-box">
+        <span class="details">Customer Type</span>
+      </div>
+      <div class="form-check">
+        <input type="radio" id="wholesaler" name="CustomerType" value="Wholesaler" required>
+        <label for="wholesalerl">Wholesaler</label><br>
+        <input type="radio" id="retailer" name="CustomerType" value="Retailer" required>
+        <label for="retailer">Retailer</label><br>
+        <input type="radio" id="endcustomer" name="CustomerType" value="End customer" required> 
+        <label for="endcustomer">End customer</label>
+      </div>
+            
+      <div class="button">
+        <input type="submit" value="SUBMIT">
+      </div>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
