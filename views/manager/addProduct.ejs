@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/regstyle.css">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Add New Product</div>
+    <div class="content">
+      <form action="/add" method="POST">
+        <div class="user-details">
+          
+            
+            <div class="input-box">
+              <span class="details">Product Name</span>
+              <input type="text" name="product_name" placeholder="product name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Unit Price</span>
+              <input type="text" name ='unit_price' placeholder="price" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Unit Capacity</span>
+              <input type="text" name='unit_capacity' placeholder="unit capacity" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Stock Amount</span>
+              <input type="text" name='stock_amount' placeholder="stock amount" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Last Refilled Date</span>
+              <input type="text" name='last_refilled_date' placeholder="yyyy-mm-dd" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Availability</span>
+                <input type="text" name='availability_status' placeholder="1/0" required>
+              </div>      
+ 
+      <div class="button">
+        <input type="submit" value="ADD">
+      </div>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
 
