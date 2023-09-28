@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/cart.css">
+        <title>
+            
+        </title>
+    </head>
+    <body>
+        
+    
+
+        <div class="container">
+            <header>
+                <div class="content-wrapper">
+                    
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/managermain">Manager</a>
+                        
+                    </nav>
+                    
+                </div>
+            </header>
+            <form action="/createTrip">
+                <input type="submit" class="btn" value="CREATE TRIP">
+            </form>
+    
+            
+            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            
+            <% if(action == 'add') { %>
+
+            <% } else { %>
+                
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Trip ID</th>
+                                <th>Train</th>
+                                <th>Shedule date</th>
+                                <th>Available Capacity</th>
+
+                                
+                            </tr>
+                            <%
+                            if(sampleData.length > 0)
+                            {
+                                sampleData.forEach(function(data){
+                            %>
+                            <tr>
+                                <td><%= data.trip_ID %></td>
+                                <td><%= data.train_name %></td>
+                                <td><%= data.schedule_date %></td>
+                                <td><%= data.available_capacity %></td>
+
+                               
+
+                            </form>
+                                
+                                <td></td>
+                            </tr>
+                            <%
+                                });
+                            }
+                            else
+                            {
+                            %>
+                            <tr>
+                                <td colspan="5">No Data Found</td>
+                            </tr>
+                            <%
+                            }
+                            %>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <% } %>
+
+        </div> 
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
