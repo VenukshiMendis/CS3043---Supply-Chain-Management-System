@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/cart.css">
+        <title>
+            
+        </title>
+        <style> body { display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(-45deg,#7f379b,#ffa26c);}
+        </style>
+    </head>
+    <body>
+        
+    
+
+        <div class="container">
+            <header>
+                <div class="content-wrapper">
+                    
+                    <nav>
+                    <h3>
+                        <a href="/">Logout</a>  
+                        <a href="/drivermain">Back</a>
+                    </h3>
+                    </nav>
+                    
+                </div>
+            </header>
+
+            
+
+    
+            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            
+            <% if(action == 'add') { %>
+
+            <% } else { %>
+                
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Truck Turn ID</th>
+                                <th>Order ID</th>
+                                <th>Name</th>
+                                <th>Phone Number</th>
+                                <th>Delivery Address</th>
+                                <th>Order Status</th>
+                            
+                            </tr>
+                            <%
+                            if(sampleData.length > 0)
+                            {
+                                sampleData.forEach(function(data){
+                            %>
+                            <tr>
+                                <td><%= data.truck_turn_ID %></td>
+                                <td><%= data.order_ID %></td>
+                                <td><%= data.name %></td>
+                                <td><%= data.phone %></td>
+                                <td><%= data.address %></td>
+                                <td><%= data.status %></td>
+
+                                <form action="/drivermain/setStatus"  method="post">  
+                                <td>
+                                    <input type="text" name="orderID" value='<%= data.order_ID %>' hidden>
+                                    <input type="submit" class="btn btn-primary" value="SET STATUS TO DELIVERED" >
+                                    
+                                </td>
+                            </form>
+                                
+                                <td></td>
+                            </tr>
+                            <%
+                                });
+                            }
+                            else
+                            {
+                            %>
+                            <tr>
+                                <td colspan="5">No Data Found</td>
+                            </tr>
+                            <%
+                            }
+                            %>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <% } %>
+
+
+
+
+            <%   if(typeof message != "undefined" && message) { %>
+
+                <div class="mt-5 mb-3">
+            
+                  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            
+                    <strong> Order ID: <%=  message  %> Updated Status to Delivered!</strong>
+            
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            
+                  </div>
+            
+                </div> 
+            
+              <% }    %>
+
+        </div> 
+
+
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
